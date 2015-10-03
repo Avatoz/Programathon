@@ -5,17 +5,16 @@ body {
     width: 1024px;
 }
 
-@font-face {
+/*@font-face {
     font-family: 'Super Mario Bros.';
     src: url('Super Mario Bros.ttf');
-}
+}*/
 
 /***** Header *********/
 header {
     background: #000000;
     border-radius: 25px;
     border: 2px solid #c0392b;
-    font-family: 'Super Mario Bros.';
     font-size: 20px;
     height: 74px;
     margin-top: 10px;
@@ -40,6 +39,30 @@ header #imagen{
     height: 50px;
 }
 canvas{
-    margin-top: 350px;
-     border: 2px solid #c0392b;
+    margin-top: 50px;
+    background: #000;
+    border: 2px solid #c0392b;
+    border-radius: 25px;
+    opacity: 0.9;
+
+}
+#mascaradas{
+    height:10px;
+    position:absolute;
+    z-index: 999999;
+}
+.desaparecer{
+    display: none;
+}
+
+#parent{
+    position:relative;
+}
+
+#divJuego{
+    position: absolute;
+    position: absolute;
+    left: 0px;
+    top: 55px;
+    z-index: 2;
 }
