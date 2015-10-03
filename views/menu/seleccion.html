@@ -13,39 +13,41 @@
     </head>
     <body background="..\..\media\images\inicio\FONDOS\bckgSeleccion.jpg">
         <div id="divContainer" class="container">
-                <img id="imgEscogerPersonaje" class="col-md-4" src="..\..\media\images\menu\seleccionPersonaje.png">
+            <div id="divImg" class="row">    
                 <div id="divPersonajes" class="col-md-12">
-                    <img id="imgBaula" class="col-md-2" src="..\..\media\images\Personajes\Baula\mini_baula.png">  
-                    <img id="imgColibri" class="col-md-2" src="..\..\media\images\Personajes\Colibri\mini_colibri.png">
-                </div>
-                <div id="divPersonajes1" class="col-md-12">
-                    <img id="imgJaguar" class="col-md-2" src="..\..\media\images\Personajes\Jaguar\mini_jaguar.png">  
-                    <img id="imgMono" class="col-md-2" src="..\..\media\images\Personajes\Mono\mini_mono.png">  
+                    <img id="imgEscogerPersonaje" class="col-md-11" src="..\..\media\images\menu\seleccionPersonaje.png">
+                    <img id="imgBaula" class="img-thumbnail" src="..\..\media\images\Personajes\Baula\mini_baula.png">
+                    <img id="imgColibri" class="img-thumbnail" src="..\..\media\images\Personajes\Colibri\mini_colibri.png">
+                    <img id="imgJaguar" class="img-thumbnail" src="..\..\media\images\Personajes\Jaguar\mini_jaguar.png"> 
+                    <img id="imgMono" class="img-thumbnail" src="..\..\media\images\Personajes\Mono\mini_mono.png"> 
                 </div> 
-                <div id="divPersonajes2" class="col-md-12">
-                    <img id="imgPerezoso" class="col-md-2" src="..\..\media\images\Personajes\Oso\mini_perezoso.png">  
-                    <img id="imgRana" class="col-md-2" src="..\..\media\images\Personajes\Rana\mini_rana.png">
+                <div id="divPersonajes1" class="col-md-12">
+                    <img id="imgPerezoso" class="img-thumbnail" src="..\..\media\images\Personajes\Oso\mini_perezoso.png">
+                    <img id="imgRana" class="img-thumbnail" src="..\..\media\images\Personajes\Rana\mini_rana.png">
+                    <img id="imgTucan" class="img-thumbnail" src="..\..\media\images\Personajes\Tucan\mini_tucan.png">
+                    <img id="imgVenado" class="img-thumbnail" src="..\..\media\images\Personajes\Venado\mini_venado.png">
                 </div>
-                <div id="divPersonajes3" class="col-md-12">
-                    <img id="imgTucan" class="col-md-2" src="..\..\media\images\Personajes\Tucan\mini_tucan.png">  
-                    <img id="imgVenado" class="col-md-2" src="..\..\media\images\Personajes\Venado\mini_venado.png">  
-                </div>
-            <div id="divSegundo" class="row">
-                <div id="divNombre" class="col-ms-12">
-                    <p>
-                        Nombre: <input type="text" name="nombre">
-                    </p>
+            </div>
+                <div id="divNombre" class="col-ms-5">
+                    <br>
+                    <form>
+                        <label for="lblNombre">Nombre:</label> 
+                        <input type="text" name="txtNombre"/>
+                    </form>
                 </div>
                 <div id="divDificultad" class="col-ms-12">
                     <br>
-                    <p class="col-md-2">Seleccione el nivel de dificultad:
+                    <label type="text" for="lblDificut" class="col-md-2">Dificultad:
                         <select id="cmbDificultad" class="col-ms-12">
                             <option value="principiante">Principiante</option>
                             <option value="intermedio">Intermedio</option>
                             <option value="avanzado">Avanzado</option>
                         </select>
-                    </p>
-                </div>
+                    </label> 
+            </div id="divImg1" class="col-ms-5">
+                <input type="image" id="imgBoton" src="..\..\media\images\menu\ok.png" />
+            <div>
+            
             </div>
         </div>
     </body>
