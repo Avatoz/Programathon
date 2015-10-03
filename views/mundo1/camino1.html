@@ -3,6 +3,12 @@
     <head>
          <meta charset="utf-8">
         <title>Camino 1</title>  
+           <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <script src="http://ajax.aspnetcdn.com/ajax/jquery.ui/1.10.3/jquery-ui.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+        <script src="./js/test.js"></script>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">       
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
         <audio src="Programathon/Audios/Bike_Rides.mp3" autoplay="autoplay" hidden="hidden"></audio>
     </head>
     <body background="C:\Users\Darren\Desktop\Programathon\Recursos Gráficos Programathon 2015\Camino 1\FISERV-PROGRAMATHON-CAMINO1-FONDO_FONDO.png">
@@ -14,57 +20,61 @@
         </div> 
       </section> 
     </header>
-        <div>
-     <img src="C:\Users\Darren\Desktop\Programathon\Recursos Gráficos Programathon 2015\Camino 1\MARIPOSAS\AMARILLO\MARIPOSA-AMARILLO-01.png"/>
-     <img src="C:\Users\Darren\Desktop\Programathon\Recursos Gráficos Programathon 2015\Camino 1\MARIPOSAS\AMARILLO\MARIPOSA-AMARILLO-02.png"/>
-     <img src="C:\Users\Darren\Desktop\Programathon\Recursos Gráficos Programathon 2015\Camino 1\MARIPOSAS\AMARILLO\MARIPOSA-AMARILLO-03.png"/>
-     <img src="C:\Users\Darren\Desktop\Programathon\Recursos Gráficos Programathon 2015\Camino 1\MARIPOSAS\AMARILLO\MARIPOSA-AMARILLO-04.png"/>
-     <img src="C:\Users\Darren\Desktop\Programathon\Recursos Gráficos Programathon 2015\Camino 1\MARIPOSAS\AMARILLO\MARIPOSA-AMARILLO-05.png"/>
+        <main>
+        <canvas id="canvasCamino1"></canvas>
+      
+        <div id="divMariAmarillas" class="col-md-12">
+     <img id="imgMariAmarilla01" class="col-md-13" src="..\..\media\images\camino1\MARIPOSAS\AMARILLO\MARIPOSA-AMARILLO-01.png" />
+     <img id="imgMariAmarilla02" class="col-md-13" src="..\..\media\images\camino1\MARIPOSAS\AMARILLO\MARIPOSA-AMARILLO-02.png" />
+     <img id="imgMariAmarilla03" class="col-md-13" src="..\..\media\images\camino1\MARIPOSAS\AMARILLO\MARIPOSA-AMARILLO-03.png" />
+     <img id="imgMariAmarilla04" class="col-md-13" src="..\..\media\images\camino1\MARIPOSAS\AMARILLO\MARIPOSA-AMARILLO-04.png" />
+     <img id="imgMariAmarilla05" class="col-md-13" src="..\..\media\images\camino1\MARIPOSAS\AMARILLO\MARIPOSA-AMARILLO-05.png" />
             </div>
             <br>
-         <div>
-     <img src="C:\Users\Darren\Desktop\Programathon\Recursos Gráficos Programathon 2015\Camino 1\MARIPOSAS\AZUL\MARIPOSA-AZUL-01.png"/>
-     <img src="C:\Users\Darren\Desktop\Programathon\Recursos Gráficos Programathon 2015\Camino 1\MARIPOSAS\AZUL\MARIPOSA-AZUL-02.png"/>
-     <img src="C:\Users\Darren\Desktop\Programathon\Recursos Gráficos Programathon 2015\Camino 1\MARIPOSAS\AZUL\MARIPOSA-AZUL-03.png"/>
-     <img src="C:\Users\Darren\Desktop\Programathon\Recursos Gráficos Programathon 2015\Camino 1\MARIPOSAS\AZUL\MARIPOSA-AZUL-04.png"/>
-     <img src="C:\Users\Darren\Desktop\Programathon\Recursos Gráficos Programathon 2015\Camino 1\MARIPOSAS\AZUL\MARIPOSA-AZUL-05.png"/> 
+         <div id="divMariAzules" class="col-md-12">
+     <img id="imgMariAzul01" class="col-md-13" src="..\..\media\images\camino1\MARIPOSAS\AZUL\MARIPOSA-AZUL-01.png"/>
+     <img id="imgMariAzul02" class="col-md-13" src="..\..\media\images\camino1\MARIPOSAS\AZUL\MARIPOSA-AZUL-02.png"/>
+     <img id="imgMariAzul03" class="col-md-13" src="..\..\media\images\camino1\MARIPOSAS\AZUL\MARIPOSA-AZUL-03.png"/>
+     <img id="imgMariAzul04" class="col-md-13" src="..\..\media\images\camino1\MARIPOSAS\AZUL\MARIPOSA-AZUL-04.png"/>
+     <img id="imgMariAzul05" class="col-md-13" src="..\..\media\images\camino1\MARIPOSAS\AZUL\MARIPOSA-AZUL-05.png"/> 
         </div>
             <br>
             <br>
             <br>
-         <div>
-     <img src="C:\Users\Darren\Desktop\Programathon\Recursos Gráficos Programathon 2015\Camino 1\MARIPOSAS\NARANJA\MARIPOSA-NARANJA-01.png"/>
-     <img src="C:\Users\Darren\Desktop\Programathon\Recursos Gráficos Programathon 2015\Camino 1\MARIPOSAS\NARANJA\MARIPOSA-NARANJA-02.png"/>
-     <img src="C:\Users\Darren\Desktop\Programathon\Recursos Gráficos Programathon 2015\Camino 1\MARIPOSAS\NARANJA\MARIPOSA-NARANJA-03.png"/>
-     <img src="C:\Users\Darren\Desktop\Programathon\Recursos Gráficos Programathon 2015\Camino 1\MARIPOSAS\NARANJA\MARIPOSA-NARANJA-04.png"/>
-     <img src="C:\Users\Darren\Desktop\Programathon\Recursos Gráficos Programathon 2015\Camino 1\MARIPOSAS\NARANJA\MARIPOSA-NARANJA-05.png"/> 
+         <div id="divMariNaranja" class="col-md-12">
+     <img id="imgMariNaranja01" class="col-md-13" src="..\..\media\images\camino1\MARIPOSAS\NARANJA\MARIPOSA-NARANJA-01.png"/>
+     <img id="imgMariNaranja02" class="col-md-13" src="..\..\media\images\camino1\MARIPOSAS\NARANJA\MARIPOSA-NARANJA-02.png"/>
+     <img id="imgMariNaranja03" class="col-md-13" src="..\..\media\images\camino1\MARIPOSAS\NARANJA\MARIPOSA-NARANJA-03.png"/>
+     <img id="imgMariNaranja04" class="col-md-13" src="..\..\media\images\camino1\MARIPOSAS\NARANJA\MARIPOSA-NARANJA-04.png"/>
+     <img id="imgMariNaranja05" class="col-md-13" src="..\..\media\images\camino1\MARIPOSAS\NARANJA\MARIPOSA-NARANJA-05.png"/> 
         </div>
          <br>
          <br>
-         <div>
-     <img src="C:\Users\Darren\Desktop\Programathon\Recursos Gráficos Programathon 2015\Camino 1\MARIPOSAS\ROJA\MARIPOSA-ROJA-01.png"/>
-     <img src="C:\Users\Darren\Desktop\Programathon\Recursos Gráficos Programathon 2015\Camino 1\MARIPOSAS\ROJA\MARIPOSA-ROJA-02.png"/>
-     <img src="C:\Users\Darren\Desktop\Programathon\Recursos Gráficos Programathon 2015\Camino 1\MARIPOSAS\ROJA\MARIPOSA-ROJA-03.png"/>
-     <img src="C:\Users\Darren\Desktop\Programathon\Recursos Gráficos Programathon 2015\Camino 1\MARIPOSAS\ROJA\MARIPOSA-ROJA-04.png"/>
-     <img src="C:\Users\Darren\Desktop\Programathon\Recursos Gráficos Programathon 2015\Camino 1\MARIPOSAS\ROJA\MARIPOSA-ROJA-05.png"/> 
+         <div id="divMariRoja" class="col-md-12">
+     <img id="imgMariRoja01" src="..\..\media\images\camino1\MARIPOSAS\ROJA\MARIPOSA-ROJA-01.png"/>
+     <img id="imgMariRoja02" src="..\..\media\images\camino1\MARIPOSAS\ROJA\MARIPOSA-ROJA-02.png"/>
+     <img id="imgMariRoja03" src="..\..\media\images\camino1\MARIPOSAS\ROJA\MARIPOSA-ROJA-03.png"/>
+     <img id="imgMariRoja04" src="..\..\media\images\camino1\MARIPOSAS\ROJA\MARIPOSA-ROJA-04.png"/>
+     <img id="imgMariRoja05" src="..\..\media\images\camino1\MARIPOSAS\ROJA\MARIPOSA-ROJA-05.png"/> 
         </div>
          <br>
          <br>
-         <div>
-     <img src="C:\Users\Darren\Desktop\Programathon\Recursos Gráficos Programathon 2015\Camino 1\MARIPOSAS\VERDE\MARIPOSA-VERDE-01.png"/>
-     <img src="C:\Users\Darren\Desktop\Programathon\Recursos Gráficos Programathon 2015\Camino 1\MARIPOSAS\VERDE\MARIPOSA-VERDE-02.png"/>
-     <img src="C:\Users\Darren\Desktop\Programathon\Recursos Gráficos Programathon 2015\Camino 1\MARIPOSAS\VERDE\MARIPOSA-VERDE-03.png"/>
-     <img src="C:\Users\Darren\Desktop\Programathon\Recursos Gráficos Programathon 2015\Camino 1\MARIPOSAS\VERDE\MARIPOSA-VERDE-04.png"/>
-     <img src="C:\Users\Darren\Desktop\Programathon\Recursos Gráficos Programathon 2015\Camino 1\MARIPOSAS\VERDE\MARIPOSA-VERDE-05.png"/> 
+         <div id="divMariVerde" class="col-md-12">
+     <img id="imgMariRoja01" src="..\..\media\images\camino1\MARIPOSAS\VERDE\MARIPOSA-VERDE-01.png"/>
+     <img id="imgMariVerde02" src="..\..\media\images\camino1\MARIPOSAS\VERDE\MARIPOSA-VERDE-02.png"/>
+     <img id="imgMariVerde03" src="..\..\media\images\camino1\MARIPOSAS\VERDE\MARIPOSA-VERDE-03.png"/>
+     <img id="imgMariVerde04" src="..\..\media\images\camino1\MARIPOSAS\VERDE\MARIPOSA-VERDE-04.png"/>
+     <img id="imgMariVerde05" src="..\..\media\images\camino1\MARIPOSAS\VERDE\MARIPOSA-VERDE-05.png"/> 
         </div>
          <br>
          <br>
-         <div>
-     <img src="C:\Users\Darren\Desktop\Programathon\Recursos Gráficos Programathon 2015\Camino 1\MARIPOSAS\VIOLETA\MARIPOSA-VIOLETA-01.png"/>
-     <img src="C:\Users\Darren\Desktop\Programathon\Recursos Gráficos Programathon 2015\Camino 1\MARIPOSAS\VIOLETA\MARIPOSA-VIOLETA-02.png"/>
-     <img src="C:\Users\Darren\Desktop\Programathon\Recursos Gráficos Programathon 2015\Camino 1\MARIPOSAS\VIOLETA\MARIPOSA-VIOLETA-03.png"/>
-     <img src="C:\Users\Darren\Desktop\Programathon\Recursos Gráficos Programathon 2015\Camino 1\MARIPOSAS\VIOLETA\MARIPOSA-VIOLETA-04.png"/>
-     <img src="C:\Users\Darren\Desktop\Programathon\Recursos Gráficos Programathon 2015\Camino 1\MARIPOSAS\VIOLETA\MARIPOSA-VIOLETA-05.png"/> 
+         <div id="divMariVioleta" class="col-md-12">
+     <img id="imgMariVioleta01" src="..\..\media\images\camino1\MARIPOSAS\VIOLETA\MARIPOSA-VIOLETA-01.png"/>
+     <img id="imgMariVioleta02" src="..\..\media\images\camino1\MARIPOSAS\VIOLETA\MARIPOSA-VIOLETA-02.png"/>
+     <img id="imgMariVioleta03" src="..\..\media\images\camino1\MARIPOSAS\VIOLETA\MARIPOSA-VIOLETA-03.png"/>
+     <img id="imgMariVioleta04" src="..\..\media\images\camino1\MARIPOSAS\VIOLETA\MARIPOSA-VIOLETA-04.png"/>
+     <img id="imgMariViolta05" src="..\..\media\images\camino1\MARIPOSAS\VIOLETA\MARIPOSA-VIOLETA-05.png"/> 
         </div>
+    </main>
     </body>
  </html>
