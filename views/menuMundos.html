@@ -1,27 +1,59 @@
-<!Doctype>
+<!DOCTYPE>
 <html>
     <head>
         <script src="https://code.jquery.com/jquery-1.11.3.min.js" type="application/javascript"></script>
-        <script src="../js/menu/menu.js" type="application/javascript"></script>
-        <script src="https://code.jquery.com/jquery-1.10.3.min.js" type="application/javascript"></script>
+        <script src="../js/menu/menu.js"></script>
+        <script src="https://code.jquery.com/jquery-1.1.3.min.js/1.10.3/jquery-ui.min.js" type="application/javascript"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js" type="application/javascript"></script>
         
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
         <link rel="stylesheet" href="../style/menu/menu.css">
-        
+        <audio src="../media/audios/Bike_Rides.mp3" autoplay="autoplay" hidden="hidden"></audio>
     </head>
     <body>
         <div class="container">
-            <div class="row">
-                <div id="divCamino1" class="col-xs-12 col-md-8 divMundos cf">
-                    <input type="button" id="btnCamino1" value="Test"/>
-                    <br/>
-                    <img alt="Mundo 1" src="../media/images/Mundo1/CAMPOFERIAL/ELEMENTOS/FISERV-PROGRAMATHON-JUEGO-MUNDO-1-CAMPOFERIAL_FONDO.png"></img>
-                    <img alt="Mundo 1" src="../media/images/Mundo1/MAR/ELEMENTOS/FISERV-PROGRAMATHON-JUEGO-MUNDO1-MAR_MAR.png"></img>
-                    <img alt="Mundo 1" src="../media/images/Mundo1/PLAYA/ELEMENTOS/FISERV-PROGRAMATHON-JUEGO-MUNDO1-FONDO_FONDO.png"></img>
-                    <img alt="Mundo 1" src="../media/images/Mundo1/MAR/ELEMENTOS/FISERV-PROGRAMATHON-JUEGO-MUNDO1-MAR_MAR.png"></img>
-                </div>
+            <div class="col-md-12">
+                <h2>Escoja el camino</h2>
+            </div>                
+        </div>
+        
+        <div class="container">
+            <div class="row divBorder">
+                <a href="mundo1/camino1.html">
+                    <div id="divCamino1" class="col-md-12 divCaminos">
+                        <div class="col-md-6 levelImg" >
+                            <img alt="" src="../media/images/menu/1.png" ></img>
+                        </div>
+                        <div class="col-md-6">
+                            <img alt="Camino 1" src="../media/images/camino1/FISERV-PROGRAMATHON-CAMINO1-FONDO_FONDO.png"></img>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="row divBorder">
+                <a href="mundo/camino2.html">
+                    <div id="divCamino2" class="col-md-12 divCaminos">
+                        <div class="col-md-6 levelImg">
+                            <img alt="" src="../media/images/menu/2.png" ></img>
+                        </div>
+                        <div class="col-md-6">
+                            <img alt="Camino 2" src="../media/images/Camino2/camino_2.png" class="active"></img>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="row divBorder">
+                <a href="mundo3/camino3.html">
+                    <div id="divCamino3" class="col-md-12 divCaminos">
+                        <div class="col-md-6 levelImg">
+                            <img alt="" src="../media/images/menu/3.png" ></img>
+                        </div>
+                        <div class="col-md-6">
+                            <img alt="Camino 3" src="../media/images/Camino3/FISERV-PROGRAMATHON-JUEGO-CAMINO3-FIESTAPATRONAL-01.png" class="active"></img>
+                        </div>
+                    </div>
+                </a>
             </div>
         </div>
     </body>

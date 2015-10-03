@@ -1,15 +1,13 @@
-$( "#divCamino1" ).click(function () {
-  console.log("Test");
+$( document ).ready(function() {
+    console.log( "ready!" );
 });
 
-function handler1() {
-  console.log( "handler1" );
+function abrirCamino1() {
+    debugger;
+    window.location.href = "./mundo1/camino1.html";
 }
 
-$( document ).ready(function() {
-    console.log( "document loaded" );
+$('#divCamino1').click(function () {
+    debugger;
+    window.location.href = "./mundo/camino1.html"
 });
-
-var $test = $( "#divCamino1" );
-
-$test.on( "click", handler1);
