@@ -1,0 +1,37 @@
+body {
+    background: url('../../media/images/Mundo 1/CAMPOFERIAL/ELEMENTOS/FISERV-PROGRAMATHON-JUEGO-MUNDO-1-CAMPOFERIAL_FONDO.png');
+    font-family: 'Open Sans';
+    margin: 0 auto;
+    height: 624px;
+    width: 1024px;
+}
+
+@font-face {
+    font-family: 'Super Mario Bros.';
+    src: url('../../media/fonts/Super Mario Bros.ttf');
+}
+
+/***** Header *********/
+header {
+    background: #000000;
+    border-radius: 25px;
+    border: 2px solid #c0392b;
+    font-family: 'Super Mario Bros.';
+    font-size: 20px;
+    height: 74px;
+    margin-top: 10px;
+    width: 1019px;
+}
+
+header .titulo{
+    display: inline-block;
+    float: left;
+    color: #FFF;
+    margin: 25px 15px;
+    width: 200px;
+}
+
+#imgPersonaje{
+    width: 50px;
+    height: 50px;
+}
