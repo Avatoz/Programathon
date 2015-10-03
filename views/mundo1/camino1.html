@@ -4,6 +4,7 @@
         
          <meta charset="utf-8">
          <title>Camino 1</title> 
+       
          <link rel="stylesheet" href="..\..\style\camino1.css" />
          <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
          <script src="http://ajax.aspnetcdn.com/ajax/jquery.ui/1.10.3/jquery-ui.min.js"></script>
@@ -12,7 +13,7 @@
          <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
          <audio src="..\..\media\audios\Bike_Rides.mp3" autoplay="autoplay" hidden="hidden"></audio>
          <script type="text/javascript">
-            $(document).ready(function(){  
+         $(document).ready(function () {  
   
     var tiempo_inicio_anim = 10;  
     var tiempo_entre_img = 400;  
@@ -38,7 +39,7 @@
             $("#imgMariRoja02").fadeIn(tiempo_fade);
             $("#imgMariVioleta02").fadeIn(tiempo_fade);
             $("#imgMariNaranaja02").fadeIn(tiempo_fade);
-        }, tiempo_entre_img);    
+        }, tiempo_entre_img*2);    
         setTimeout(function() {  
             $("#imgMariAmarilla02").fadeOut(tiempo_fade);
             $("#imgMariAzul02").fadeOut(tiempo_fade);
@@ -52,7 +53,7 @@
             $("#imgMariRoja03").fadeIn(tiempo_fade);
             $("#imgMariVioleta03").fadeIn(tiempo_fade);
             $("#imgMariNaranja03").fadeIn(tiempo_fade);
-        }, tiempo_entre_img*2);  
+        }, tiempo_entre_img*3);  
             setTimeout(function() {    
             $("#imgMariAmarilla03").fadeOut(tiempo_fade);
             $("#imgMariAzul03").fadeOut(tiempo_fade);
@@ -66,7 +67,7 @@
             $("#imgMariRoja04").fadeIn(tiempo_fade);
             $("#imgMariVioleta04").fadeIn(tiempo_fade);
             $("#imgMariNaranaja04").fadeIn(tiempo_fade);    
-        }, tiempo_entre_img*3);
+        }, tiempo_entre_img);
             setTimeout(function(){
             $("#imgMariAmarilla04").fadeOut(tiempo_fade);
             $("#imgMariAzul04").fadeOut(tiempo_fade);
@@ -96,7 +97,7 @@
     }, tiempo_inicio_anim);  
   
 });
-         </script>
+        </script>
     </head>
     <body background="..\..\media\images\camino1\FISERV-PROGRAMATHON-CAMINO1-FONDO_FONDO.png" >
           <!--************Header************-->
