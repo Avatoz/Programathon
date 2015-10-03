@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
+        
          <meta charset="utf-8">
          <title>Camino 1</title> 
          <link rel="stylesheet" href="..\..\style\camino1.css" />
@@ -10,6 +11,92 @@
          <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">       
          <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
          <audio src="..\..\media\audios\Bike_Rides.mp3" autoplay="autoplay" hidden="hidden"></audio>
+         <script type="text/javascript">
+            $(document).ready(function(){  
+  
+    var tiempo_inicio_anim = 10;  
+    var tiempo_entre_img = 400;  
+    var tiempo_fade = 400;  
+  
+    function animacion() {  
+        $("#imgMariAmarilla01").fadeIn(tiempo_fade);     
+        $("#imgMariAzul01").fadeIn(tiempo_fade); 
+        $("#imgMariVerde01").fadeIn(tiempo_fade); 
+        $("#imgMariRoja01").fadeIn(tiempo_fade); 
+        $("#imgMariVioleta01").fadeIn(tiempo_fade); 
+        $("#imgMariNaranja01").fadeIn(tiempo_fade);
+        setTimeout(function() {   
+            $("#imgMariAmarilla01").fadeOut(tiempo_fade);
+            $("#imgMariAzul01").fadeOut(tiempo_fade);
+            $("#imgMariVerde01").fadeOut(tiempo_fade);
+            $("#imgMariRoja01").fadeOut(tiempo_fade);
+            $("#imgMariVioleta01").fadeOut(tiempo_fade);
+            $("#imgMariNaranja01").fadeOut(tiempo_fade);
+            $("#imgMariAmarilla02").fadeIn(tiempo_fade);
+            $("#imgMariAzul02").fadeIn(tiempo_fade);
+            $("#imgMariVerde02").fadeIn(tiempo_fade);
+            $("#imgMariRoja02").fadeIn(tiempo_fade);
+            $("#imgMariVioleta02").fadeIn(tiempo_fade);
+            $("#imgMariNaranaja02").fadeIn(tiempo_fade);
+        }, tiempo_entre_img);    
+        setTimeout(function() {  
+            $("#imgMariAmarilla02").fadeOut(tiempo_fade);
+            $("#imgMariAzul02").fadeOut(tiempo_fade);
+            $("#imgMariVerde02").fadeOut(tiempo_fade);
+            $("#imgMariRoja02").fadeOut(tiempo_fade);
+            $("#imgMariVioleta02").fadeOut(tiempo_fade);
+            $("#imgMariNaranaja02").fadeOut(tiempo_fade);
+            $("#imgMariAmarilla03").fadeIn(tiempo_fade);
+            $("#imgMariAzul03").fadeIn(tiempo_fade);
+            $("#imgMariVerde03").fadeIn(tiempo_fade);
+            $("#imgMariRoja03").fadeIn(tiempo_fade);
+            $("#imgMariVioleta03").fadeIn(tiempo_fade);
+            $("#imgMariNaranja03").fadeIn(tiempo_fade);
+        }, tiempo_entre_img*2);  
+            setTimeout(function() {    
+            $("#imgMariAmarilla03").fadeOut(tiempo_fade);
+            $("#imgMariAzul03").fadeOut(tiempo_fade);
+            $("#imgMariVerde03").fadeOut(tiempo_fade);
+            $("#imgMariRoja03").fadeOut(tiempo_fade);
+            $("#imgMariVioleta03").fadeOut(tiempo_fade);
+            $("#imgMariNaranja03").fadeOut(tiempo_fade);    
+            $("#imgMariAmarilla04").fadeIn(tiempo_fade);
+            $("#imgMariAzul04").fadeIn(tiempo_fade);
+            $("#imgMariVerde04").fadeIn(tiempo_fade);
+            $("#imgMariRoja04").fadeIn(tiempo_fade);
+            $("#imgMariVioleta04").fadeIn(tiempo_fade);
+            $("#imgMariNaranaja04").fadeIn(tiempo_fade);    
+        }, tiempo_entre_img*3);
+            setTimeout(function(){
+            $("#imgMariAmarilla04").fadeOut(tiempo_fade);
+            $("#imgMariAzul04").fadeOut(tiempo_fade);
+            $("#imgMariVerde04").fadeOut(tiempo_fade);
+            $("#imgMariRoja04").fadeOut(tiempo_fade);
+            $("#imgMariVioleta04").fadeOut(tiempo_fade);
+            $("#imgMariNaranaja04").fadeOut(tiempo_fade);    
+            $("#imgMariAmarilla05").fadeIn(tiempo_fade);
+            $("#imgMariAzul05").fadeIn(tiempo_fade);
+            $("#imgMariVerde05").fadeIn(tiempo_fade);
+            $("#imgMariRoja05").fadeIn(tiempo_fade);
+            $("#imgMariVioleta05").fadeIn(tiempo_fade);
+            $("#imgMariNaranja05").fadeIn(tiempo_fade);
+        },tiempo_entre_img*4);
+            setTimeout(function(){
+            $("#imgMariAmarilla05").fadeOut(tiempo_fade);
+            $("#imgMariAzul05").fadeOut(tiempo_fade);
+            $("#imgMariVerde05").fadeOut(tiempo_fade);
+            $("#imgMariRoja05").fadeOut(tiempo_fade);
+            $("#imgMariVioleta05").fadeOut(tiempo_fade);
+            $("#imgMariNaranja05").fadeOut(tiempo_fade);     
+            animacion();
+        },tiempo_entre_img*5);
+    }   
+    setTimeout(function() {  
+        animacion();  
+    }, tiempo_inicio_anim);  
+  
+});
+         </script>
     </head>
     <body background="..\..\media\images\camino1\FISERV-PROGRAMATHON-CAMINO1-FONDO_FONDO.png" >
           <!--************Header************-->
@@ -36,55 +123,56 @@
       </section> 
     </header>
         <main>
-            <canvas id="canvasCamino1"></canvas> 
+           <canvas ></canvas>
             <br>
-            <div id="divMariAmarillas" class="col-md-12"  style="position: relative; left: 100px; top: 25px; width: 100px; height: 300px;">
-                <img id="imgMariAmarilla01" class="col-md-13" src="..\..\media\images\camino1\MARIPOSAS\AMARILLO\MARIPOSA-AMARILLO-01.png" />
-                <img id="imgMariAmarilla02" class="col-md-13" src="..\..\media\images\camino1\MARIPOSAS\AMARILLO\MARIPOSA-AMARILLO-02.png" hidden="hidden"/>
-                <img id="imgMariAmarilla03" class="col-md-13" src="..\..\media\images\camino1\MARIPOSAS\AMARILLO\MARIPOSA-AMARILLO-03.png" hidden="hidden"/>
-                <img id="imgMariAmarilla04" class="col-md-13" src="..\..\media\images\camino1\MARIPOSAS\AMARILLO\MARIPOSA-AMARILLO-04.png" hidden="hidden"/>
-                <img id="imgMariAmarilla05" class="col-md-13" src="..\..\media\images\camino1\MARIPOSAS\AMARILLO\MARIPOSA-AMARILLO-05.png" hidden="hidden"/>
+            <div id="divMariAmarillas" class="col-md-12"  style="position: relative; left: 100px; top: 5px; width: 100px; height: 300px;">
+                <img id="imgMariAmarilla01" class="col-md-13" src="..\..\media\images\camino1\MARIPOSAS\AMARILLO\MARIPOSA-AMARILLO-01.png" hidden="hidden"style="position:absolute;top:5px;left:100px;width:100px;height:50px;"/>
+                <img id="imgMariAmarilla02" class="col-md-13" src="..\..\media\images\camino1\MARIPOSAS\AMARILLO\MARIPOSA-AMARILLO-02.png" hidden="hidden"style="position:absolute;top:5px;left:100px;width:100px;height:50px;"/>
+                <img id="imgMariAmarilla03" class="col-md-13" src="..\..\media\images\camino1\MARIPOSAS\AMARILLO\MARIPOSA-AMARILLO-03.png" hidden="hidden"style="position:absolute;top:5px;left:100px;width:100px;height:50px;"/>
+                <img id="imgMariAmarilla04" class="col-md-13" src="..\..\media\images\camino1\MARIPOSAS\AMARILLO\MARIPOSA-AMARILLO-04.png" hidden="hidden"style="position:absolute;top:5px;left:100px;width:100px;height:50px;"/>
+                <img id="imgMariAmarilla05" class="col-md-13" src="..\..\media\images\camino1\MARIPOSAS\AMARILLO\MARIPOSA-AMARILLO-05.png" hidden="hidden"style="position:absolute;top:5px;left:100px;width:100px;height:50px;"/>
             </div>
             <br>
-            <div id="divMariAzules" class="col-md-12" style="position: relative; left: 200px; top: 25px; width: 100px; height: 300px;">
-                <img id="imgMariAzul01" class="col-md-13" src="..\..\media\images\camino1\MARIPOSAS\AZUL\MARIPOSA-AZUL-01.png"/>
-                <img id="imgMariAzul02" class="col-md-13" src="..\..\media\images\camino1\MARIPOSAS\AZUL\MARIPOSA-AZUL-02.png" hidden="hidden"/>
-                <img id="imgMariAzul03" class="col-md-13" src="..\..\media\images\camino1\MARIPOSAS\AZUL\MARIPOSA-AZUL-03.png"hidden="hidden"/>
-                <img id="imgMariAzul04" class="col-md-13" src="..\..\media\images\camino1\MARIPOSAS\AZUL\MARIPOSA-AZUL-04.png"hidden="hidden"/>
-                <img id="imgMariAzul05" class="col-md-13" src="..\..\media\images\camino1\MARIPOSAS\AZUL\MARIPOSA-AZUL-05.png"hidden="hidden"/>  
+            <div id="divMariAzules" class="col-md-12" style="position: relative; left: 200px; top: 5px; width: 100px; height: 300px;">
+                <img id="imgMariAzul01" class="col-md-13" src="..\..\media\images\camino1\MARIPOSAS\AZUL\MARIPOSA-AZUL-01.png"hidden="hidden"style="position:absolute;top:5px;left:200px;width:100px;height:50px;"/>
+                <img id="imgMariAzul02" class="col-md-13" src="..\..\media\images\camino1\MARIPOSAS\AZUL\MARIPOSA-AZUL-02.png" hidden="hidden"style="position:absolute;top:5px;left:200px;width:100px;height:50px;"/>
+                <img id="imgMariAzul03" class="col-md-13" src="..\..\media\images\camino1\MARIPOSAS\AZUL\MARIPOSA-AZUL-03.png"hidden="hidden"style="position:absolute;top:5px;left:200px;width:100px;height:50px;"/>
+                <img id="imgMariAzul04" class="col-md-13" src="..\..\media\images\camino1\MARIPOSAS\AZUL\MARIPOSA-AZUL-04.png"hidden="hidden"style="position:absolute;top:5px;left:200px;width:100px;height:50px;"/>
+                <img id="imgMariAzul05" class="col-md-13" src="..\..\media\images\camino1\MARIPOSAS\AZUL\MARIPOSA-AZUL-05.png"hidden="hidden"style="position:absolute;top:5px;left:200px;width:100px;height:50px;"/>  
             </div>
             <br>
-            <div id="divMariNaranja" class="col-md-12" style="position: relative; left: 300px; top: 25px; width: 100px; height: 300px;">
-                <img id="imgMariNaranja01" class="col-md-13" src="..\..\media\images\camino1\MARIPOSAS\NARANJA\MARIPOSA-NARANJA-01.png"/>
-                <img id="imgMariNaranja02" class="col-md-13" src="..\..\media\images\camino1\MARIPOSAS\NARANJA\MARIPOSA-NARANJA-02.png"hidden="hidden"/>
-                <img id="imgMariNaranja03" class="col-md-13" src="..\..\media\images\camino1\MARIPOSAS\NARANJA\MARIPOSA-NARANJA-03.png"hidden="hidden"/>
-                <img id="imgMariNaranja04" class="col-md-13" src="..\..\media\images\camino1\MARIPOSAS\NARANJA\MARIPOSA-NARANJA-04.png"hidden="hidden"/>
-                <img id="imgMariNaranja05" class="col-md-13" src="..\..\media\images\camino1\MARIPOSAS\NARANJA\MARIPOSA-NARANJA-05.png"hidden="hidden"/> 
+            <div id="divMariNaranja" class="col-md-12" style="position: relative; left: 300px; top: 5px; width: 100px; height: 300px;">
+                <img id="imgMariNaranja01" class="col-md-13" src="..\..\media\images\camino1\MARIPOSAS\NARANJA\MARIPOSA-NARANJA-01.png" hidden="hidden"style="position:absolute;top:5px;left:300px;width:100px;height:50px;"/>
+                <img id="imgMariNaranja02" class="col-md-13" src="..\..\media\images\camino1\MARIPOSAS\NARANJA\MARIPOSA-NARANJA-02.png" hidden="hidden"style="position:absolute;top:5px;left:300px;width:100px;height:50px;"/>
+                <img id="imgMariNaranja03" class="col-md-13" src="..\..\media\images\camino1\MARIPOSAS\NARANJA\MARIPOSA-NARANJA-03.png" hidden="hidden"style="position:absolute;top:5px;left:300px;width:100px;height:50px;"/>
+                <img id="imgMariNaranja04" class="col-md-13" src="..\..\media\images\camino1\MARIPOSAS\NARANJA\MARIPOSA-NARANJA-04.png" hidden="hidden"style="position:absolute;top:5px;left:300px;width:100px;height:50px;"/>
+                <img id="imgMariNaranja05" class="col-md-13" src="..\..\media\images\camino1\MARIPOSAS\NARANJA\MARIPOSA-NARANJA-05.png" hidden="hidden"style="position:absolute;top:5px;left:300px;width:100px;height:50px;"/> 
             </div>
             <br>
-            <div id="divMariRoja" class="col-md-12" style="position: relative; left: 400px; top: 25px; width: 100px; height: 300px;">
-                <img id="imgMariRoja01" class="col-md-13" src="..\..\media\images\camino1\MARIPOSAS\ROJA\MARIPOSA-ROJA-01.png"/>
-                <img id="imgMariRoja02" class="col-md-13" src="..\..\media\images\camino1\MARIPOSAS\ROJA\MARIPOSA-ROJA-02.png" hidden="hidden"/>
-                <img id="imgMariRoja03" class="col-md-13" src="..\..\media\images\camino1\MARIPOSAS\ROJA\MARIPOSA-ROJA-03.png" hidden="hidden"/>
-                <img id="imgMariRoja04" class="col-md-13" src="..\..\media\images\camino1\MARIPOSAS\ROJA\MARIPOSA-ROJA-04.png" hidden="hidden"/>
-                <img id="imgMariRoja05" class="col-md-13" src="..\..\media\images\camino1\MARIPOSAS\ROJA\MARIPOSA-ROJA-05.png" hidden="hidden"/> 
+            <div id="divMariRoja" class="col-md-12" style="position: relative; left: 400px; top: 5px; width: 100px; height: 300px;">
+                <img id="imgMariRoja01" class="col-md-13" src="..\..\media\images\camino1\MARIPOSAS\ROJA\MARIPOSA-ROJA-01.png" hidden="hidden"style="position:absolute;top:5px;left:400px;width:100px;height:50px;"/>
+                <img id="imgMariRoja02" class="col-md-13" src="..\..\media\images\camino1\MARIPOSAS\ROJA\MARIPOSA-ROJA-02.png" hidden="hidden"style="position:absolute;top:5px;left:400px;width:100px;height:50px;"/>
+                <img id="imgMariRoja03" class="col-md-13" src="..\..\media\images\camino1\MARIPOSAS\ROJA\MARIPOSA-ROJA-03.png" hidden="hidden"style="position:absolute;top:5px;left:400px;width:100px;height:50px;"/>
+                <img id="imgMariRoja04" class="col-md-13" src="..\..\media\images\camino1\MARIPOSAS\ROJA\MARIPOSA-ROJA-04.png" hidden="hidden"style="position:absolute;top:5px;left:400px;width:100px;height:50px;"/>
+                <img id="imgMariRoja05" class="col-md-13" src="..\..\media\images\camino1\MARIPOSAS\ROJA\MARIPOSA-ROJA-05.png" hidden="hidden"style="position:absolute;top:5px;left:400px;width:100px;height:50px;"/> 
             </div>   
             <br>
-            <div id="divMariVerde" class="col-md-12"style="position: relative; left: 500px; top: 25px; width: 100px; height: 300px;">
-                <img id="imgMariRoja01" class="col-md-13" src="..\..\media\images\camino1\MARIPOSAS\VERDE\MARIPOSA-VERDE-01.png"/>
-                <img id="imgMariVerde02" class="col-md-13" src="..\..\media\images\camino1\MARIPOSAS\VERDE\MARIPOSA-VERDE-02.png" hidden="hidden"/>
-                <img id="imgMariVerde03" class="col-md-13" src="..\..\media\images\camino1\MARIPOSAS\VERDE\MARIPOSA-VERDE-03.png" hidden="hidden"/>
-                <img id="imgMariVerde04" class="col-md-13" src="..\..\media\images\camino1\MARIPOSAS\VERDE\MARIPOSA-VERDE-04.png"hidden="hidden"/>
-                <img id="imgMariVerde05" class="col-md-13" src="..\..\media\images\camino1\MARIPOSAS\VERDE\MARIPOSA-VERDE-05.png" hidden="hidden"/> 
+            <div id="divMariVerde" class="col-md-12"style="position: relative; left: 500px; top: 5px; width: 100px; height: 300px;">
+                <img id="imgMariVerde01" class="col-md-13" src="..\..\media\images\camino1\MARIPOSAS\VERDE\MARIPOSA-VERDE-01.png" hidden="hidden"style="position:absolute;top:5px;left:500px;width:100px;height:50px;"/>
+                <img id="imgMariVerde02" class="col-md-13" src="..\..\media\images\camino1\MARIPOSAS\VERDE\MARIPOSA-VERDE-02.png" hidden="hidden"style="position:absolute;top:5px;left:500px;width:100px;height:50px;"/>
+                <img id="imgMariVerde03" class="col-md-13" src="..\..\media\images\camino1\MARIPOSAS\VERDE\MARIPOSA-VERDE-03.png" hidden="hidden"style="position:absolute;top:5px;left:500px;width:100px;height:50px;"/>
+                <img id="imgMariVerde04" class="col-md-13" src="..\..\media\images\camino1\MARIPOSAS\VERDE\MARIPOSA-VERDE-04.png" hidden="hidden"style="position:absolute;top:5px;left:500px;width:100px;height:50px;"/>
+                <img id="imgMariVerde05" class="col-md-13" src="..\..\media\images\camino1\MARIPOSAS\VERDE\MARIPOSA-VERDE-05.png" hidden="hidden"style="position:absolute;top:5px;left:500px;width:100px;height:50px;"/> 
             </div>
             <br>
-            <div id="divMariVioleta" class="col-md-12" style="position: relative; left: 600px; top: 25px; width: 100px; height: 300px;">
-                <img id="imgMariVioleta01" class="col-md-13" src="..\..\media\images\camino1\MARIPOSAS\VIOLETA\MARIPOSA-VIOLETA-01.png"/>
-                <img id="imgMariVioleta02" class="col-md-13" src="..\..\media\images\camino1\MARIPOSAS\VIOLETA\MARIPOSA-VIOLETA-02.png" hidden="hidden"/>
-                <img id="imgMariVioleta03" class="col-md-13" src="..\..\media\images\camino1\MARIPOSAS\VIOLETA\MARIPOSA-VIOLETA-03.png" hidden="hidden"/>
-                <img id="imgMariVioleta04" class="col-md-13" src="..\..\media\images\camino1\MARIPOSAS\VIOLETA\MARIPOSA-VIOLETA-04.png" hidden="hidden"/>
-                <img id="imgMariViolta05" class="col-md-13" src="..\..\media\images\camino1\MARIPOSAS\VIOLETA\MARIPOSA-VIOLETA-05.png" hidden="hidden"/> 
+            <div id="divMariVioleta" class="col-md-12" style="position: relative; left: 600px; top: 5px; width: 100px; height: 300px;">
+                <img id="imgMariVioleta01" class="col-md-13" src="..\..\media\images\camino1\MARIPOSAS\VIOLETA\MARIPOSA-VIOLETA-01.png" hidden="hidden"style="position:absolute;top:5px;left:600px;width:100px;height:50px;"/>
+                <img id="imgMariVioleta02" class="col-md-13" src="..\..\media\images\camino1\MARIPOSAS\VIOLETA\MARIPOSA-VIOLETA-02.png" hidden="hidden"style="position:absolute;top:5px;left:600px;width:100px;height:50px;"/>
+                <img id="imgMariVioleta03" class="col-md-13" src="..\..\media\images\camino1\MARIPOSAS\VIOLETA\MARIPOSA-VIOLETA-03.png" hidden="hidden"style="position:absolute;top:5px;left:600px;width:100px;height:50px;"/>
+                <img id="imgMariVioleta04" class="col-md-13" src="..\..\media\images\camino1\MARIPOSAS\VIOLETA\MARIPOSA-VIOLETA-04.png" hidden="hidden"style="position:absolute;top:5px;left:600px;width:100px;height:50px;"/>
+                <img id="imgMariViolta05" class="col-md-13" src="..\..\media\images\camino1\MARIPOSAS\VIOLETA\MARIPOSA-VIOLETA-05.png" hidden="hidden"style="position:absolute;top:5px;left:600px;width:100px;height:50px;"/> 
             </div>
+              
         </main>
     </body>
  </html>

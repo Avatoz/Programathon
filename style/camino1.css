@@ -1,4 +1,6 @@
-
+body{
+background-size: 100% 100%;
+}
 /***** Header *********/
 header {
     background: #000000;
