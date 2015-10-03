@@ -1,0 +1,65 @@
+.divMundos {
+    position:relative;
+    display:inline-block;
+    overflow:hidden;
+    height: 30%;
+}
+
+.divMundos > img {
+/*    position:absolute;
+    top:50%;
+    min-height:100%;
+    display:block;
+    left:50%;
+    -webkit-transform: translate(-50%, -50%);
+    min-width:100%;*/
+    max-width:100%;
+    max-height:100%;
+}
+
+.cf {
+  position:relative;
+  height:281px;
+  width:450px;
+  margin:0 auto;
+}
+
+.cf img {
+  position:absolute;
+  left:0;
+  -webkit-transition: opacity 1s ease-in-out;
+  -moz-transition: opacity 1s ease-in-out;
+  -o-transition: opacity 1s ease-in-out;
+  transition: opacity 1s ease-in-out;
+}
+
+@keyframes cf4FadeInOut {
+  0% {
+    opacity:1;
+  }
+  17% {
+    opacity:1;
+  }
+  25% {
+    opacity:0;
+  }
+  92% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+
+.cf img:nth-of-type(1) {
+  animation-delay: 6s;
+}
+.cf img:nth-of-type(2) {
+  animation-delay: 4s;
+}
+.cf img:nth-of-type(3) {
+  animation-delay: 2s;
+}
+.cf img:nth-of-type(4) {
+  animation-delay: 0;
+}
