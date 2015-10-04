@@ -107,6 +107,13 @@
     setTimeout(function() {  
         animacion();  
     }, tiempo_inicio_anim);  
+    function cambio1(){
+        $("#imgPersonaje4").attr('src','C:\Users\Darren\Desktop\ProgramathonC\media\images\Personajes\Baula\personaje_2_mov_1_green.png');
+        $("#imgPersonaje2").attr('src','C:\Users\Darren\Desktop\ProgramathonC\media\images\Personajes\Baula\personaje_2_mov_2_green.png');
+        $("#imgPersonaje3").attr('src','C:\Users\Darren\Desktop\ProgramathonC\media\images\Personajes\Baula\personaje_2_mov_3_green.png');
+    }
+    setTimeout(cambio1,4000); 
+             
 });
         </script>
     </head>
@@ -186,7 +193,7 @@
             </div>
             <br>
              <div id="divPersonaje"class="col-md-12" style="position: relative; left: 10px; top: 10px; width: 1000px; height: 300px;">
-                 <img id="imgPersonaje4" class="col-md-13" src="..\..\media\images\Personajes\Baula\personaje_2_mov_1_blue.png"hidden="hidden" style="position:absolute;top:10px;left:0px;width:261px;height:300px;" />
+                 <img id="imgPersonaje4" class="col-md-13" src="..\..\media\images\Personajes\Baula\personaje_2_mov_1_blue.png"hidden="hidden" style="position:absolute;top:10px;left:0px;width:261px;height:300px;" /> 
                  <img id="imgPersonaje2" class="col-md-13" src="..\..\media\images\Personajes\Baula\personaje_2_mov_2_blue.png"hidden="hidden" style="position:absolute;top:10px;left:0px;width:261px;height:300px;"/>
                  <img id="imgPersonaje3" class="col-md-13" src="..\..\media\images\Personajes\Baula\personaje_2_mov_3_blue.png"hidden="hidden"  style="position:absolute;top:10px;left:0px;width:261px;height:300px;"/>
             </div> 
