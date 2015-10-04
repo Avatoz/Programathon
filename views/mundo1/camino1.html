@@ -16,23 +16,29 @@
          $(document).ready(function () {  
   
     var tiempo_inicio_anim = 10;  
-    var tiempo_entre_img = 400;  
-    var tiempo_fade = 400;  
+    var tiempo_entre_img = 300;  
+    var tiempo_fade = 300;        
+            /****Animacion Objetos****/
     function animacion() {
-         $("#imgPersonaje").animate({left:'+=250px'});
+        $("#imgPersonaje4").fadeIn(tiempo_fade);
+        $("#imgPersonaje4").animate({left:'+=8'});
         $("#imgMariAmarilla01").fadeIn(tiempo_fade);     
         $("#imgMariAzul01").fadeIn(tiempo_fade); 
         $("#imgMariVerde01").fadeIn(tiempo_fade); 
         $("#imgMariRoja01").fadeIn(tiempo_fade); 
         $("#imgMariVioleta01").fadeIn(tiempo_fade); 
         $("#imgMariNaranja01").fadeIn(tiempo_fade);
-        setTimeout(function() {   
+       setTimeout(function() {
             $("#imgMariAmarilla01").fadeOut(tiempo_fade);
             $("#imgMariAzul01").fadeOut(tiempo_fade);
             $("#imgMariVerde01").fadeOut(tiempo_fade);
             $("#imgMariRoja01").fadeOut(tiempo_fade);
             $("#imgMariVioleta01").fadeOut(tiempo_fade);
             $("#imgMariNaranja01").fadeOut(tiempo_fade);
+            $("#imgPersonaje4").fadeOut(tiempo_fade);
+            $("#imgPersonaje4").animate({left:'+=8'});
+            $("#imgPersonaje2").fadeIn(tiempo_fade);
+            $("#imgPersonaje2").animate({left:'+=8'});
             $("#imgMariAmarilla02").fadeIn(tiempo_fade);
             $("#imgMariAzul02").fadeIn(tiempo_fade);
             $("#imgMariVerde02").fadeIn(tiempo_fade);
@@ -40,13 +46,17 @@
             $("#imgMariVioleta02").fadeIn(tiempo_fade);
             $("#imgMariNaranaja02").fadeIn(tiempo_fade);
         }, tiempo_entre_img*2);    
-        setTimeout(function() {  
+        setTimeout(function() {
             $("#imgMariAmarilla02").fadeOut(tiempo_fade);
             $("#imgMariAzul02").fadeOut(tiempo_fade);
             $("#imgMariVerde02").fadeOut(tiempo_fade);
             $("#imgMariRoja02").fadeOut(tiempo_fade);
             $("#imgMariVioleta02").fadeOut(tiempo_fade);
             $("#imgMariNaranaja02").fadeOut(tiempo_fade);
+            $("#imgPersonaje2").fadeOut(tiempo_fade);
+            $("#imgPersonaje2").animate({left:'+=8'});
+            $("#imgPersonaje3").fadeIn(tiempo_fade);
+            $("#imgPersonaje3").animate({left:'+=8'});
             $("#imgMariAmarilla03").fadeIn(tiempo_fade);
             $("#imgMariAzul03").fadeIn(tiempo_fade);
             $("#imgMariVerde03").fadeIn(tiempo_fade);
@@ -54,13 +64,15 @@
             $("#imgMariVioleta03").fadeIn(tiempo_fade);
             $("#imgMariNaranja03").fadeIn(tiempo_fade);
         }, tiempo_entre_img*3);  
-            setTimeout(function() {    
+            setTimeout(function() {
             $("#imgMariAmarilla03").fadeOut(tiempo_fade);
             $("#imgMariAzul03").fadeOut(tiempo_fade);
             $("#imgMariVerde03").fadeOut(tiempo_fade);
             $("#imgMariRoja03").fadeOut(tiempo_fade);
             $("#imgMariVioleta03").fadeOut(tiempo_fade);
-            $("#imgMariNaranja03").fadeOut(tiempo_fade);    
+            $("#imgMariNaranja03").fadeOut(tiempo_fade);               
+            $("#imgPersonaje3").fadeOut(tiempo_fade);
+            $("#imgPersonaje3").animate({left:'+=8'});    
             $("#imgMariAmarilla04").fadeIn(tiempo_fade);
             $("#imgMariAzul04").fadeIn(tiempo_fade);
             $("#imgMariVerde04").fadeIn(tiempo_fade);
@@ -95,7 +107,6 @@
     setTimeout(function() {  
         animacion();  
     }, tiempo_inicio_anim);  
-  
 });
         </script>
     </head>
@@ -173,8 +184,11 @@
                 <img id="imgMariVioleta04" class="col-md-13" src="..\..\media\images\camino1\MARIPOSAS\VIOLETA\MARIPOSA-VIOLETA-04.png" hidden="hidden"style="position:absolute;top:5px;left:600px;width:100px;height:50px;"/>
                 <img id="imgMariViolta05" class="col-md-13" src="..\..\media\images\camino1\MARIPOSAS\VIOLETA\MARIPOSA-VIOLETA-05.png" hidden="hidden"style="position:absolute;top:5px;left:600px;width:100px;height:50px;"/> 
             </div>
-             <div id="divPersonaje"class="col-md-12" style="position: relative; left: 0px; top: 0px; width: 1000px; height: 300px;">
-                 <img id="imgPersonaje" class="col-md-13" src="..\..\media\images\Personajes\Baula\personaje_2_mov_1_blue.png"style="position:absolute;top:10px;left:0px;width:261px;height:300px;"/>
+            <br>
+             <div id="divPersonaje"class="col-md-12" style="position: relative; left: 10px; top: 10px; width: 1000px; height: 300px;">
+                 <img id="imgPersonaje4" class="col-md-13" src="..\..\media\images\Personajes\Baula\personaje_2_mov_1_blue.png"hidden="hidden" style="position:absolute;top:10px;left:0px;width:261px;height:300px;" />
+                 <img id="imgPersonaje2" class="col-md-13" src="..\..\media\images\Personajes\Baula\personaje_2_mov_2_blue.png"hidden="hidden" style="position:absolute;top:10px;left:0px;width:261px;height:300px;"/>
+                 <img id="imgPersonaje3" class="col-md-13" src="..\..\media\images\Personajes\Baula\personaje_2_mov_3_blue.png"hidden="hidden"  style="position:absolute;top:10px;left:0px;width:261px;height:300px;"/>
             </div> 
         </main>
     </body>
