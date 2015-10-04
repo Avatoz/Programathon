@@ -49,7 +49,7 @@ canvas{
 #mascaradas{
     height:10px;
     position:absolute;
-    z-index: 999999;
+    z-index: 3;
 }
 .desaparecer{
     display: none;
@@ -58,11 +58,16 @@ canvas{
 #parent{
     position:relative;
 }
-
-#divJuego{
+.divJuego{
     position: absolute;
     position: absolute;
     left: 0px;
     top: 55px;
+}
+#imgMascarada{
+    z-index: 4;
+}
+
+#elementos{
     z-index: 2;
 }

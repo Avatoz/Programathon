@@ -1,13 +1,27 @@
 
-$("#spnNivel").click(function(){
+
+
+setTimeout(function() {
+
     $("#mascaradas").animate({
         left: '250px',
         height: '+=490px',
         width: '+=680px'
-        
     });
-}); 
+    
+}, 1000);
 
+
+
+
+$('img.draggable').each(function(i, el) {
+
+    var tLeft = Math.floor(Math.random() * 500),
+            tTop = Math.floor(Math.random() * 500);
+
+    $(el).css({position: 'absolute', left: tLeft, top: tTop});
+
+});
 
 (function() {
     var requestAnimationFrame = window.requestAnimationFrame || window.mozRequestAnimationFrame || window.webkitRequestAnimationFrame || window.msRequestAnimationFrame;
@@ -16,24 +30,24 @@ $("#spnNivel").click(function(){
 
 
 var canvas = document.getElementById("canvasMundo1"),
-    ctx = canvas.getContext("2d"),
-    width = 1020,
-    height = 500,
-    player = {
-      x : width/2,
-      y : height - 5,
-      width : 100,
-      height : 100,
-      speed: 3,
-      velX: 0,
-      velY: 0,
-      jumping: false
-    },
-    keys = [],
-    friction = 0.8,
-    gravity = 0;
-    
- 
+        ctx = canvas.getContext("2d"),
+        width = 1020,
+        height = 500,
+        player = {
+            x: width / 2,
+            y: height - 5,
+            width: 100,
+            height: 100,
+            speed: 3,
+            velX: 0,
+            velY: 0,
+            jumping: false
+        },
+keys = [],
+        friction = 0.8,
+        gravity = 0;
+
+
 canvas.width = width;
 canvas.height = height;
 
