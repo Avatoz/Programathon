@@ -3,7 +3,19 @@
     <head>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
         <script src="http://ajax.aspnetcdn.com/ajax/jquery.ui/1.10.3/jquery-ui.min.js"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+<!--        <script src="..\..\js\menu\seleccion.js"></script>-->
+        
+        
+        
+        <script>
+            $(document).ready(function(){
+                $("#divImg1").click(function(){
+                    alert("Text: " + $("#txtNombre_id").context());
+                });
+            });
+        </script>
+        
+        
         
         <link rel="stylesheet" type="text/css" href="..\..\style\menu\seleccion.css">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
@@ -30,14 +42,14 @@
             </div>
                 <div id="divNombre" class="col-ms-5">
                     <br>
-                    <form>
+                    <form id="formNombre">
                         <label for="lblNombre">Nombre:</label> 
-                        <input type="text" name="txtNombre" maxlength="20"/>
+                        <input id="txtNombre_id" type="text" name="txtNombre" maxlength="20"/>
                     </form>
                 </div>
                 <div id="divDificultad" class="col-ms-12">
                     <br>
-                    <label type="text" for="lblDificut" class="col-md-2">Dificultad:
+                    <label type="text" id="lblDificut" class="col-md-2">Dificultad:
                         <select id="cmbDificultad" class="col-ms-12">
                             <option value="principiante">Principiante</option>
                             <option value="intermedio">Intermedio</option>
