@@ -1,0 +1,38 @@
+#divContainer { 
+    border: 10px solid brown;
+    display:block;
+}
+
+body {
+    background-size: 100% 100%;
+}
+
+select {
+    padding:16px;
+    margin: 0;
+    -webkit-border-radius:16px;
+    -moz-border-radius:16px;
+    border-radius:16px;
+    -webkit-box-shadow: 0 3px 0 #ccc, 0 -1px #fff inset;
+    -moz-box-shadow: 0 3px 0 #ccc, 0 -1px #fff inset;
+    box-shadow: 0 3px 0 #ccc, 0 -1px #fff inset;
+    background: #f8f8f8;
+    color:#888;
+    border:none;
+    outline:none;
+    display: inline-block;
+    -webkit-appearance:none;
+    -moz-appearance:none;
+    appearance:none;
+    cursor:pointer;
+    align-content: center;
+}
+
+#divDificultad, #divNombre {
+    font-family: "Tahoma", Geneva, sans-serif;
+    font-size: 150%;
+    text-align: center;
+}
+#divImg {
+    text-align: center;
+}  

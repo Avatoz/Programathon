@@ -18,8 +18,8 @@
     var tiempo_inicio_anim = 10;  
     var tiempo_entre_img = 400;  
     var tiempo_fade = 400;  
-  
-    function animacion() {  
+    function animacion() {
+         $("#imgPersonaje").animate({left:'+=250px'});
         $("#imgMariAmarilla01").fadeIn(tiempo_fade);     
         $("#imgMariAzul01").fadeIn(tiempo_fade); 
         $("#imgMariVerde01").fadeIn(tiempo_fade); 
@@ -173,7 +173,9 @@
                 <img id="imgMariVioleta04" class="col-md-13" src="..\..\media\images\camino1\MARIPOSAS\VIOLETA\MARIPOSA-VIOLETA-04.png" hidden="hidden"style="position:absolute;top:5px;left:600px;width:100px;height:50px;"/>
                 <img id="imgMariViolta05" class="col-md-13" src="..\..\media\images\camino1\MARIPOSAS\VIOLETA\MARIPOSA-VIOLETA-05.png" hidden="hidden"style="position:absolute;top:5px;left:600px;width:100px;height:50px;"/> 
             </div>
-              
+             <div id="divPersonaje"class="col-md-12" style="position: relative; left: 0px; top: 0px; width: 1000px; height: 300px;">
+                 <img id="imgPersonaje" class="col-md-13" src="..\..\media\images\Personajes\Baula\personaje_2_mov_1_blue.png"style="position:absolute;top:10px;left:0px;width:261px;height:300px;"/>
+            </div> 
         </main>
     </body>
  </html>
