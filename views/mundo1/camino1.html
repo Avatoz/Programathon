@@ -14,10 +14,9 @@
          <audio src="..\..\media\audios\Bike_Rides.mp3" autoplay="autoplay" hidden="hidden"></audio>
          <script type="text/javascript">
          $(document).ready(function () {  
-  
     var tiempo_inicio_anim = 10;  
     var tiempo_entre_img = 300;  
-    var tiempo_fade = 300;        
+    var tiempo_fade = 300;       
             /****Animacion Objetos****/
     function animacion() {
         $("#imgPersonaje4").fadeIn(tiempo_fade);
@@ -106,14 +105,7 @@
     }   
     setTimeout(function() {  
         animacion();  
-    }, tiempo_inicio_anim);  
-    function cambio1(){
-        $("#imgPersonaje4").attr('src','C:\Users\Darren\Desktop\ProgramathonC\media\images\Personajes\Baula\personaje_2_mov_1_green.png');
-        $("#imgPersonaje2").attr('src','C:\Users\Darren\Desktop\ProgramathonC\media\images\Personajes\Baula\personaje_2_mov_2_green.png');
-        $("#imgPersonaje3").attr('src','C:\Users\Darren\Desktop\ProgramathonC\media\images\Personajes\Baula\personaje_2_mov_3_green.png');
-    }
-    setTimeout(cambio1,4000); 
-             
+    }, tiempo_inicio_anim);                           
 });
         </script>
     </head>
@@ -142,6 +134,14 @@
       </section> 
     </header>
         <main>
+            <div id="divColor" class="col-md-12" style="position: relative; left:600px;top: 2px;width: 100px; height: 300px;">
+                <img id="imgColor1" class="col-md-13" src="..\..\media\images\camino1\FISERV-PROGRAMATHON-CAMINO1-FONDO_VIOLETA.png" style="position: absolute;top:2px;left:0px" />
+             <img id="imgColor2" class="col-md-13" src="..\..\media\images\camino1\FISERV-PROGRAMATHON-CAMINO1-FONDO_AMARILLO.png"style="position: absolute;top:2px;left:0px" hidden="hidden"/>
+                <img id="imgColor3" class="col-md-13" src="..\..\media\images\camino1\FISERV-PROGRAMATHON-CAMINO1-FONDO_AZUL.png"style="position: absolute;top:2px;left:0px" hidden="hidden"/>
+                <img id="imgColor4" class="col-md-13" src="..\..\media\images\camino1\FISERV-PROGRAMATHON-CAMINO1-FONDO_ROJO.png"style="position: absolute;top:2px;left:0px"hidden="hidden" />
+                <img id="imgColor5" class="col-md-13" src="..\..\media\images\camino1\FISERV-PROGRAMATHON-CAMINO1-FONDO_NARANJA.png"style="position: absolute;top:2px;left:0px"hidden="hidden" />
+                <img id="imgColor6" class="col-md-13" src="..\..\media\images\camino1\FISERV-PROGRAMATHON-CAMINO1-FONDO_VERDE.png"style="position: absolute;top:2px;left:0px" hidden="hidden"/>
+            </div>
            <canvas ></canvas>
             <br>
             <div id="divMariAmarillas" class="col-md-12"  style="position: relative; left: 100px; top: 5px; width: 100px; height: 300px;">
@@ -193,9 +193,9 @@
             </div>
             <br>
              <div id="divPersonaje"class="col-md-12" style="position: relative; left: 10px; top: 10px; width: 1000px; height: 300px;">
-                 <img id="imgPersonaje4" class="col-md-13" src="..\..\media\images\Personajes\Baula\personaje_2_mov_1_blue.png"hidden="hidden" style="position:absolute;top:10px;left:0px;width:261px;height:300px;" /> 
-                 <img id="imgPersonaje2" class="col-md-13" src="..\..\media\images\Personajes\Baula\personaje_2_mov_2_blue.png"hidden="hidden" style="position:absolute;top:10px;left:0px;width:261px;height:300px;"/>
-                 <img id="imgPersonaje3" class="col-md-13" src="..\..\media\images\Personajes\Baula\personaje_2_mov_3_blue.png"hidden="hidden"  style="position:absolute;top:10px;left:0px;width:261px;height:300px;"/>
+                 <img id="imgPersonaje4" class="col-md-13" src="..\..\media\images\Personajes\Baula\personaje_2_mov_1_green.png"hidden="hidden" style="position:absolute;top:10px;left:0px;width:261px;height:300px;" /> 
+                 <img id="imgPersonaje2" class="col-md-13" src="..\..\media\images\Personajes\Baula\personaje_2_mov_2_green.png"hidden="hidden" style="position:absolute;top:10px;left:0px;width:261px;height:300px;"/>
+                 <img id="imgPersonaje3" class="col-md-13" src="..\..\media\images\Personajes\Baula\personaje_2_mov_3_green.png"hidden="hidden"  style="position:absolute;top:10px;left:0px;width:261px;height:300px;"/>
             </div> 
         </main>
     </body>
